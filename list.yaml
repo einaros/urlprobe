@@ -1,0 +1,78 @@
+Directories:
+  Prefixes: ['', '_', '__']
+  Postfixes: []
+  IgnoreBlank: false
+  SuccessCodes: [200, 401, 403]
+  Entries:
+    - tmp
+    - temp
+    - temporary
+    - files
+    - upload
+    - uploads
+    - uploading
+    - bak
+    - backup
+    - backups
+    - back
+    - old
+    - older
+    - prev
+    - previous
+    - last
+
+SourceLeakage:
+  Prefixes: ['', '.', '_', '__']
+  Postfixes: ['', '.swp', '.bak', '.backup', '.old', '.prev', '.previous', '.tmp']
+  IgnoreBlank: true
+  SuccessCodes: [200]
+  Entries:
+    - index.php
+    - config.php
+    - global.php
+    - settings.php
+    - login.php
+    - logon.php
+    - admin.php
+    - manage.php
+    - administrate.php
+    - upload.php
+
+Archives:
+  Prefixes: []
+  Postfixes: ['.tar.gz', '.tgz', '.gz', '.zip', '.rar']
+  IgnoreBlank: true
+  SuccessCodes: [200]
+  Entries:
+    - upload
+    - uploads
+    - source
+    - sourcecode
+    - code
+    - old
+    - prev
+    - previous
+    - backup
+    - backups
+    - files
+    - config
+    - settings
+    - database
+    - export
+    - exported
+
+DatabaseDumps:
+  Prefixes: []
+  Postfixes: ['.sql']
+  IgnoreBlank: true
+  SuccessCodes: [200]
+  Entries:
+    - db
+    - dbs
+    - database
+    - databases
+    - backup
+    - dump
+    - users
+    - export
+    - exported
