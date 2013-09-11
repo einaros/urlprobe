@@ -7,10 +7,10 @@ Directories:
     - tmp
     - temp
     - temporary
+    - trash
     - files
     - upload
     - uploads
-    - uploading
     - bak
     - backup
     - backups
@@ -19,6 +19,7 @@ Directories:
     - older
     - prev
     - previous
+    - private
     - last
 
 SourceLeakage:
@@ -35,7 +36,6 @@ SourceLeakage:
     - logon.php
     - admin.php
     - manage.php
-    - administrate.php
     - upload.php
 
 Archives:
@@ -60,6 +60,7 @@ Archives:
     - database
     - export
     - exported
+    - private
 
 DatabaseDumps:
   Prefixes: []
