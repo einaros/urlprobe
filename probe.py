@@ -31,14 +31,14 @@ url = ''
 simulate = False
 for opt, arg in opts:
   if opt == '-h':
-    print 'scanner.py [-s/--simulate] -u <url>'
+    print 'probe.py [-s/--simulate] -u <url>'
     sys.exit()
   elif opt in ('-s', '--simulate'):
     simulate = True
   elif opt in ('-u', '--url'):
     url = arg + ('/' if not arg.endswith('/') else '')
 if not url:
-  print 'scanner.py [-s/--simulate] -u <url>'
+  print 'probe.py [-s/--simulate] -u <url>'
   sys.exit()
 
 stream = file('list.yaml', 'r')
